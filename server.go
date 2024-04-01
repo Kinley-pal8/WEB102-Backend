@@ -15,7 +15,7 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
     name := r.FormValue("name")
     password := r.FormValue("password")
 
-    if name == "admin" && password == "1234" {
+    if name == "admin" && password == "admin" {
         // Redirect to the success page
         http.Redirect(w, r, "/success", http.StatusFound)
         return
